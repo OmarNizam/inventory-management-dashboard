@@ -34,5 +34,5 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   // Required in vscode-eslint < v3.0.10 only
   "eslint.useFlatConfig": true,
-  "tailwindCSS.experimental.configFile": "../src/app/assets/css/main.css"
+  "tailwindCSS.experimental.configFile": "src/app/assets/css/main.css"
 }
