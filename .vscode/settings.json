@@ -1,8 +1,8 @@
 {
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[vue]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   // "tailwindCSS.experimental.classRegex": ["tw`(.*?)`", "tw\\('(.*?)'\\)", "tw\\(\\s*('(.*?)'|\"(.*?)\")\\s*\\)"],
   "files.associations": {
@@ -13,21 +13,25 @@
   },
   // "tailwindcss-intellisense.trace.server": "verbose",
   "tailwindCSS.includeLanguages": {
-        "vue": "html",
-        "typescript": "javascript",
-        "plaintext": "html"
+    "vue": "html",
+    "typescript": "javascript",
+    "plaintext": "html"
   },
 
   // Enable bracket pair colorization
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "[typescript]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
+  "editor.tabSize": 2,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  // Required in vscode-eslint < v3.0.10 only
+  "eslint.useFlatConfig": true
 }

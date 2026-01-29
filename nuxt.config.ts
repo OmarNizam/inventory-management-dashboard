@@ -63,9 +63,9 @@ export default defineNuxtConfig({
 
    // TypeScript Configuration
   typescript: {
-      strict: true,
-      typeCheck: false,
-    },
+    strict: true,
+    typeCheck: false,
+  },
 
   vite: {
     plugins: [tailwindcss()],
