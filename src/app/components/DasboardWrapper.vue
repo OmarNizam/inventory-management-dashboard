@@ -15,7 +15,7 @@
         </span>
       </template>
     </Button>
-    <main class="flex flex-col w-full h-full py-7 px-9"><slot /></main>
+    <main class="flex flex-col w-full h-full py-7 px-9 md:pl-24"><slot /></main>
   </div>
 </template>
 
