@@ -1,7 +1,6 @@
 <template>
-  <main class="flex flex-col min-h-screen p-4 space-y-4">
-    <h1 class="text-blue-800 dark:text-red-300">Welcome to your Nuxt Dashboard!</h1>
-    <p>This is the home page. If you see this, routing is working!</p>
+  <div class="flex bg-surface text-heading w-full min-h-screen">
+    Sidebar Placeholder
     <Button
       size="icon-sm"
       class="text-white hover:opacity-90 transition-colors focus:outline-none bg-brand dark:bg-brand-secondary cursor-pointer"
@@ -16,22 +15,13 @@
         </span>
       </template>
     </Button>
-  </main>
+    <main class="flex flex-col w-full h-full py-7 px-9"><slot /></main>
+  </div>
 </template>
 
 <script lang="ts" setup>
 import { useDark, useToggle } from '@vueuse/core'
 import { Sun, Moon } from 'lucide-vue-next'
-
-useHead({
-  title: 'Dashboard Home',
-  meta: [
-    {
-      name: 'description',
-      content: 'Welcome to the Inventory Management Dashboard home page.',
-    },
-  ],
-})
 
 const isDark = useDark() // Detects system pref + handles 'dark' class on <html>
 const toggleDark = useToggle(isDark)
