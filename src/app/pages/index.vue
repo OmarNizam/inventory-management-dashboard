@@ -14,8 +14,6 @@ useHead({
 
 const isDark = useDark() // Detects system pref + handles 'dark' class on <html>
 const toggleDark = useToggle(isDark)
-
-
 </script>
 
 <template>
@@ -28,7 +26,5 @@ const toggleDark = useToggle(isDark)
     >
       Toggle to {{ isDark ? 'Light' : 'Dark' }}
     </Button>
-
-    
   </main>
 </template>
