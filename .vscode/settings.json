@@ -1,8 +1,8 @@
 {
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": null,
   "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": null
   },
   // "tailwindCSS.experimental.classRegex": ["tw`(.*?)`", "tw\\('(.*?)'\\)", "tw\\(\\s*('(.*?)'|\"(.*?)\")\\s*\\)"],
   "files.associations": {
@@ -22,10 +22,10 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": null
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": null
   },
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
@@ -33,5 +33,6 @@
   "editor.tabSize": 2,
   "typescript.tsdk": "node_modules/typescript/lib",
   // Required in vscode-eslint < v3.0.10 only
-  "eslint.useFlatConfig": true
+  "eslint.useFlatConfig": true,
+  "tailwindCSS.experimental.configFile": "../src/app/assets/css/main.css"
 }
