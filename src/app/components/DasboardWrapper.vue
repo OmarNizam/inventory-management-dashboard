@@ -1,6 +1,6 @@
 <template>
   <div class="flex bg-surface text-heading w-full min-h-screen">
-    Sidebar Placeholder
+    <Sidebar />
     <Button
       size="icon-sm"
       class="text-white hover:opacity-90 transition-colors focus:outline-none bg-brand dark:bg-brand-secondary cursor-pointer"
@@ -15,7 +15,10 @@
         </span>
       </template>
     </Button>
-    <main class="flex flex-col w-full h-full py-7 px-9 md:pl-24"><slot /></main>
+    <main class="flex flex-col w-full h-full py-7 px-9 md:pl-24">
+      <Navbar />
+      <slot />
+    </main>
   </div>
 </template>
 
