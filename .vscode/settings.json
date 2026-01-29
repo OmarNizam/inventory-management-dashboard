@@ -11,7 +11,7 @@
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  // "tailwindcss-intellisense.trace.server": "verbose",
+  "tailwindcss-intellisense.trace.server": "verbose",
   "tailwindCSS.includeLanguages": {
     "vue": "html",
     "typescript": "javascript",

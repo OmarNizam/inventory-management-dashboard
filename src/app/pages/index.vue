@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useDark, useToggle } from '@vueuse/core'
-import Button from '~/components/ui/button/Button.vue'
+import { Sun, Moon } from 'lucide-vue-next'
 
 useHead({
   title: 'Dashboard Home',
@@ -21,10 +21,18 @@ const toggleDark = useToggle(isDark)
     <h1 class="text-blue-800 dark:text-red-300">Welcome to your Nuxt Dashboard!</h1>
     <p>This is the home page. If you see this, routing is working!</p>
     <Button
-      class="px-4 py-2 text-white rounded-md hover:opacity-90 transition-colors focus:outline-none bg-brand dark:bg-brand-secondary"
+      size="icon-sm"
+      class="text-white hover:opacity-90 transition-colors focus:outline-none bg-brand dark:bg-brand-secondary cursor-pointer"
       @click="toggleDark()"
     >
-      Toggle to {{ isDark ? 'Light' : 'Dark' }}
+      <template #default>
+        <span v-if="isDark" class="flex items-center justify-center">
+          <Sun class="inline w-5 h-5" />
+        </span>
+        <span v-else class="flex items-center justify-center">
+          <Moon class="inline w-5 h-5" />
+        </span>
+      </template>
     </Button>
   </main>
 </template>
