@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from '@tailwindcss/vite'
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   
@@ -16,8 +18,21 @@ export default defineNuxtConfig({
     modules: '../modules'
   },
 
+  css: ['./src/app/assets/css/main.css'],
+
+  app: {
+    baseURL: '/', // Set the base URL for the application
+    head: {
+      title: 'Inventory Management Dashboard',
+      meta: [
+        { name: 'description', content: 'A Nuxt 3 Inventory Management Dashboard Application' },
+      ],
+      htmlAttrs: { lang: 'en' },
+    },
+
+  },
+
   modules: [
-    '@nuxt/a11y',
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/fonts',
@@ -26,7 +41,6 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/test-utils',
     '@nuxt/scripts',
-    '@nuxtjs/tailwindcss',
     'shadcn-nuxt'
   ],
   shadcn: {
@@ -49,16 +63,12 @@ export default defineNuxtConfig({
 
    // TypeScript Configuration
   typescript: {
-    strict: true,
-    typeCheck: false,
-    tsConfig: {
-      compilerOptions: {
-        target: 'ES2020',
-        module: 'ESNext',
-        moduleResolution: 'Node',
-      },
+      strict: true,
+      typeCheck: false,
     },
+
+  vite: {
+    plugins: [tailwindcss()],
   },
 
 })
-
