@@ -23,8 +23,7 @@ const toggleDark = useToggle(isDark)
     <h1 class="text-blue-800 dark:text-red-300">Welcome to your Nuxt Dashboard!</h1>
     <p>This is the home page. If you see this, routing is working!</p>
     <Button
-      class="px-4 py-2 text-white rounded-md hover:opacity-90 transition-colors focus:outline-none"
-      :class="isDark ? 'bg-brand-secondary' : 'bg-brand'"
+      class="px-4 py-2 text-white rounded-md hover:opacity-90 transition-colors focus:outline-none bg-brand dark:bg-brand-secondary"
       @click="toggleDark()"
     >
       Toggle to {{ isDark ? 'Light' : 'Dark' }}
