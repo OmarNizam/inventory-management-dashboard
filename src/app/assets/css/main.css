@@ -15,6 +15,11 @@
   --color-warning: var(--color-warning);
   --color-info: var(--color-info);
   --color-success: var(--color-success);
+
+  --radius: var --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
 /* 2. Semantic Theme Layer */
@@ -43,6 +48,8 @@
     --color-border-hover: #9ca3af; /* Light gray border hover */
     --spacing-safe-area: 2.5rem;
     --font-display: 'Satoshi', 'sans-serif';
+    --font-body: 'Inter', 'sans-serif';
+    --radius: 0.625rem; /* 10px base radius */
   }
 
   .dark {
