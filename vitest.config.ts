@@ -11,8 +11,8 @@ export default defineVitestConfig({
     coverage: {
       provider: 'v8',
       reporter: ['text', 'json', 'html'],
-      include: ['**/*.{ts,vue}'],
-      exclude: ['**/*.spec.ts', '**/*.test.ts', '**/*.d.ts', '**/tests/e2e/**'],
+      include: ['src/app/**/*.{ts,vue}'],
+      exclude: ['**/*.spec.ts', '**/*.test.ts', '**/*.d.ts', '**/tests/**'],
       reportsDirectory: 'coverage',
     },
   },
