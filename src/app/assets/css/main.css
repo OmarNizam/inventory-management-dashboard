@@ -155,7 +155,7 @@
 
   body {
     background-color: var(--color-surface);
-    color: var(--color-heading);
+    color: var(--color-brand-text);
     min-height: 100vh;
     margin: 0;
   }
