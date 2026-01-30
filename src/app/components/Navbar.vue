@@ -31,7 +31,7 @@
       <!-- User Profile -->
       <div class="flex items-center space-x-2 cursor-pointer">
         <!-- <img src="https://via.placeholder.com/32" alt="User Avatar" class="w-8 h-8 rounded-full" /> -->
-        <span class="text-brand-text">John Doe</span>
+        <span>John Doe</span>
       </div>
       <!-- User Profile -->
     </div>
