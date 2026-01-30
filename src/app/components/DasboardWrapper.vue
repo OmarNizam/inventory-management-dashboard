@@ -1,5 +1,5 @@
 <template>
-  <div class="flex bg-surface text-heading w-full min-h-screen">
+  <div class="flex bg-surface text-brand-text w-full min-h-screen">
     <Sidebar />
     <Button
       size="icon-sm"

@@ -11,7 +11,7 @@
         <input
           type="search"
           placeholder="Search..."
-          class="pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition w-64 bg-white dark:bg-gray-700 text-heading"
+          class="pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition w-64 bg-white dark:bg-gray-700 text-brand-text"
         />
         <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
           ><Search class="w-4 h-4"
@@ -24,7 +24,7 @@
       <!-- Notifications -->
       <div class="relative">
         <Button
-          class="focus:outline-none cursor-pointer border hover:bg-brand hover:text-surface transition-colors shadow-none hover:shadow-md"
+          class="bg-brand-primary focus:outline-none cursor-pointer border hover:bg-brand hover:text-surface transition-colors shadow-none hover:shadow-md rounded-3xl"
           size="icon-lg"
         >
           <Bell />
@@ -39,7 +39,7 @@
       <!-- User Profile -->
       <div class="flex items-center space-x-2 cursor-pointer">
         <!-- <img src="https://via.placeholder.com/32" alt="User Avatar" class="w-8 h-8 rounded-full" /> -->
-        <span class="text-heading">John Doe</span>
+        <span class="text-brand-text">John Doe</span>
       </div>
       <!-- User Profile -->
     </div>

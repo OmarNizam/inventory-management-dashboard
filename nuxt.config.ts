@@ -1,21 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from '@tailwindcss/vite'
 
+const isDev = process.env.NODE_ENV === 'development'
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  
+
   devtools: { enabled: true },
 
   future: {
     compatibilityVersion: 4, // Enable Nuxt 4 behavior
   },
   // Map the top-level directories to your src folder
-  srcDir: 'src/app',      // Points to your UI code
+  srcDir: 'src/app', // Points to your UI code
   serverDir: 'src/server', // Points to your API/Nitro code
   dir: {
-    public: '../public',   // Relative to srcDir
+    public: '../public', // Relative to srcDir
     shared: '../shared',
-    modules: '../modules'
+    modules: '../modules',
   },
 
   css: ['./src/app/assets/css/main.css'],
@@ -29,7 +31,6 @@ export default defineNuxtConfig({
       ],
       htmlAttrs: { lang: 'en' },
     },
-
   },
 
   modules: [
@@ -41,7 +42,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/test-utils',
     '@nuxt/scripts',
-    'shadcn-nuxt'
+    'shadcn-nuxt',
   ],
   shadcn: {
     /**
@@ -55,20 +56,19 @@ export default defineNuxtConfig({
      * @link https://nuxt.com/docs/api/nuxt-config#alias
      * @default "@/components/ui"
      */
-    componentDir: '@/components/ui'
+    componentDir: '@/components/ui',
   },
 
-    // Enable Server-Side Rendering (SSR)
+  // Enable Server-Side Rendering (SSR)
   ssr: true,
 
-   // TypeScript Configuration
+  // TypeScript Configuration
   typescript: {
-    strict: true,
-    typeCheck: false,
+    strict: isDev,
+    typeCheck: true,
   },
 
   vite: {
     plugins: [tailwindcss()],
   },
-
 })
