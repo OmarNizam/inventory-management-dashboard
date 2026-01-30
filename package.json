@@ -11,7 +11,11 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "clean": "npx nuxi cleanup && rm -rf .nuxt .output dist node_modules/ package-lock.json",
-    "test": "vitest"
+    "test": "npx vitest run",
+    "test:coverage": "npx vitest run --coverage",
+    "e2e": "npx nuxi test --e2e",
+    "test:watch": "npx vitest",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json"
   },
   "dependencies": {
     "@nuxt/content": "^3.11.0",
@@ -33,7 +37,7 @@
     "shadcn-nuxt": "^2.4.3",
     "tailwind-merge": "^3.4.0",
     "vue": "^3.5.27",
-    "vue-router": "^4.6.4"
+    "vue-router": "^5.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
@@ -46,6 +50,7 @@
     "happy-dom": "^20.4.0",
     "jiti": "^2.6.1",
     "nuxi": "^3.32.0",
+    "playwright": "^1.58.0",
     "shadcn-vue": "^2.4.3",
     "tailwindcss": "^4.1.18",
     "tsx": "^4.21.0",

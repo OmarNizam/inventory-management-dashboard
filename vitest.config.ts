@@ -13,7 +13,7 @@ export default defineVitestConfig({
       reporter: ['text', 'json', 'html'],
       include: ['**/*.{ts,vue}'],
       exclude: ['**/*.spec.ts', '**/*.test.ts', '**/*.d.ts', '**/tests/e2e/**'],
-      reportsDirectory: '../coverage',
+      reportsDirectory: 'coverage',
     },
   },
 })

@@ -6,7 +6,7 @@ const isDev = process.env.NODE_ENV === 'development'
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
 
-  devtools: { enabled: true },
+  devtools: { enabled: isDev },
 
   future: {
     compatibilityVersion: 4, // Enable Nuxt 4 behavior
@@ -65,7 +65,7 @@ export default defineNuxtConfig({
   // TypeScript Configuration
   typescript: {
     strict: isDev,
-    typeCheck: true,
+    typeCheck: isDev,
   },
 
   vite: {

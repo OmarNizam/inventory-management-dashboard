@@ -45,6 +45,7 @@ import Button from './ui/button/Button.vue'
 const searchQuery = useState<string>('searchQuery', () => '')
 
 watch(searchQuery, (value) => {
+  // eslint-disable-next-line no-console
   console.log(value)
 })
 </script>
