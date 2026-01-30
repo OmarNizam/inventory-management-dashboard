@@ -1,7 +1,7 @@
 <template>
   <Button
     size="icon-lg"
-    class="bg-brand-primary focus:outline-none dark:bg-brand-secondary cursor-pointer border hover:bg-brand hover:text-surface transition-colors shadow-none hover:shadow-md rounded-3xl"
+    class="bg-brand-primary focus:outline-none dark:bg-brand-secondary cursor-pointer border hover:bg-brand-primary hover:text-surface transition-colors shadow-none hover:shadow-md rounded-3xl"
     @click="toggleDark()"
   >
     <template #default>
