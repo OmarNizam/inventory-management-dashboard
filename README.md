@@ -79,6 +79,8 @@ bun run preview
 - **shadcn UI** — Accessible, themeable component primitives
 - **VueUse** — Essential Vue composition utilities
 - **TypeScript** — Type safety and modern tooling
+- **Vitest** — Fast unit and e2e testing
+- **Playwright** — End-to-end browser testing
 
 ---
 
@@ -87,9 +89,13 @@ bun run preview
 - `src/app/` — Main application source
 - `src/app/components/` — UI and layout components
 - `src/app/pages/` — File-based routing
-- `src/app/assets/css/` — Global and theme CSS
+- `src/app/assets/css/main.css` — Global styles with Tailwind imports
+- `src/app/hooks/` — Custom composables and hooks
+- `src/lib/` — Utilities, composables, and services
+- `tests/unit/` — Unit tests
+- `tests/e2e/` — End-to-end tests
+- `vitest.config.ts` — Vitest configuration
 - `nuxt.config.ts` — Nuxt configuration
-- `tailwind.config.js` — Tailwind configuration
 
 ---
 
@@ -98,6 +104,8 @@ bun run preview
 - Uses shadcn-tailwind color palette and variables for consistent theming
 - Supports dark mode via `.dark` class on `<html>`
 - Easily extendable with shadcn-nuxt components
+- Refer to [shadcn UI docs](https://ui.shadcn.com/docs/installation/nuxt) for more details
+- Customize Tailwind v4 config in `src/app/assets/css/main.css` and No need in v4 for `tailwind.config.ts`
 
 ---
 
