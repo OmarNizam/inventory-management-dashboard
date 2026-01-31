@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts" setup>
-import { usePageTitle } from '~/composables/stores/navbarStore'
+import { usePageTitle, useSearchQuery } from '~/composables/stores/navbarStore'
 
 useHead({
   title: 'Dashboard - Inventory Management System',
@@ -18,7 +18,12 @@ useHead({
   ],
 })
 
-watchEffect(() => {
+onMounted(() => {
   usePageTitle().value = 'Dashboard'
+})
+
+watch(useSearchQuery(), (value) => {
+  // eslint-disable-next-line no-console
+  console.log('Search Query from Dashboard:', value)
 })
 </script>

@@ -42,13 +42,8 @@
 <script lang="ts" setup>
 import { Bell, Menu } from 'lucide-vue-next'
 import Button from './ui/button/Button.vue'
-import { usePageTitle } from '~/composables/stores/navbarStore'
+import { usePageTitle, useSearchQuery } from '~/composables/stores/navbarStore'
 
 const pageTitle = usePageTitle()
-const searchQuery = useState<string>('searchQuery', () => '')
-
-watch(searchQuery, (value) => {
-  // eslint-disable-next-line no-console
-  console.log(value)
-})
+const searchQuery = useSearchQuery()
 </script>
