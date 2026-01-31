@@ -6,15 +6,19 @@
 </template>
 
 <script lang="ts" setup>
+import { usePageTitle } from '~/composables/stores/navbarStore'
+
 useHead({
-  title: 'Dashboard Home',
+  title: 'Dashboard - Inventory Management System',
   meta: [
     {
       name: 'description',
-      content: 'Welcome to the Inventory Management Dashboard home page.',
+      content: 'Welcome to the Inventory Management Dashboard',
     },
   ],
 })
-</script>
 
-<style></style>
+watchEffect(() => {
+  usePageTitle().value = 'Dashboard'
+})
+</script>

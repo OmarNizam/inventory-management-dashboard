@@ -7,6 +7,7 @@
       >
         <Menu class="w-4 h-4" />
       </button>
+      <PageTitle v-model="pageTitle" />
       <SearchInput v-model="searchQuery" />
     </div>
 
@@ -41,7 +42,9 @@
 <script lang="ts" setup>
 import { Bell, Menu } from 'lucide-vue-next'
 import Button from './ui/button/Button.vue'
+import { usePageTitle } from '~/composables/stores/navbarStore'
 
+const pageTitle = usePageTitle()
 const searchQuery = useState<string>('searchQuery', () => '')
 
 watch(searchQuery, (value) => {
